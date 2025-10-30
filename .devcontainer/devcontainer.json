@@ -1,0 +1,18 @@
+{
+  "name": "Go Data Structures Container",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "golang.go"
+      ]
+    }
+  },
+
+  "forwardPorts": [8080],
+  
+  "postCreateCommand": ".devcontainer/post-create.sh"
+}

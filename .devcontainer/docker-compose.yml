@@ -1,0 +1,10 @@
+services:
+  app:
+    container_name: godatastructures
+    image: golang:1.25
+    command: sleep infinity
+    volumes:
+      - ..:/workspace:cached
+    working_dir: /workspace
+    ports:
+      - "8080:8080"
