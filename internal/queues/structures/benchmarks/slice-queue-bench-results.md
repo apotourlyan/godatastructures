@@ -238,7 +238,6 @@ With 10 runs per benchmark, results have statistical validity:
 - Variance is typically < 5% for speed measurements
 - Memory allocations are consistent across runs
 - Large performance differences (>2x) are highly significant
-```
 
 ## Conclusion
 
