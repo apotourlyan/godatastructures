@@ -6,6 +6,8 @@ import (
 	"github.com/apotourlyan/godatastructures/internal/utilities/test"
 )
 
+// TestSliceQueue_Empty verifies behavior on an empty queue.
+// Ensures Peek and Dequeue return appropriate errors.
 func TestSliceQueue_Empty(t *testing.T) {
 	q := NewSliceQueueWithConfig[int](
 		SliceQueueConfig{
@@ -24,6 +26,7 @@ func TestSliceQueue_Empty(t *testing.T) {
 	test.GotWantError(t, dErr, ErrorEmptyQueue)
 }
 
+// TestSliceQueue_InitialValues verifies constructor with initial values.
 func TestSliceQueue_InitialValues(t *testing.T) {
 	q := NewSliceQueueWithConfig(
 		SliceQueueConfig{
@@ -42,6 +45,7 @@ func TestSliceQueue_InitialValues(t *testing.T) {
 	test.GotWantError(t, dErr, "")
 }
 
+// TestSliceQueue_AlternativeType verifies queue works with non-int types.
 func TestSliceQueue_AlternativeType(t *testing.T) {
 	q := NewSliceQueueWithConfig(
 		SliceQueueConfig{
@@ -54,6 +58,8 @@ func TestSliceQueue_AlternativeType(t *testing.T) {
 	test.GotWant(t, q.Size(), 1)
 }
 
+// TestSliceQueue_FirstInFirstOutOrder verifies FIFO ordering is maintained.
+// Elements should be dequeued in the same order they were enqueued.
 func TestSliceQueue_FirstInFirstOutOrder(t *testing.T) {
 	q := NewSliceQueueWithConfig[int](
 		SliceQueueConfig{
@@ -93,6 +99,8 @@ func TestSliceQueue_FirstInFirstOutOrder(t *testing.T) {
 	test.GotWant(t, q.IsEmpty(), true)
 }
 
+// TestSliceQueue_PeekDoesNotModify verifies Peek is non-destructive.
+// Multiple peeks should return the same value without changing queue state.
 func TestSliceQueue_PeekDoesNotModify(t *testing.T) {
 	q := NewSliceQueueWithConfig(
 		SliceQueueConfig{
@@ -109,6 +117,7 @@ func TestSliceQueue_PeekDoesNotModify(t *testing.T) {
 	}
 }
 
+// TestSliceQueue_ReusableAfterEmpty verifies queue can be reused after becoming empty.
 func TestSliceQueue_ReusableAfterEmpty(t *testing.T) {
 	q := NewSliceQueueWithConfig[int](
 		SliceQueueConfig{
@@ -127,6 +136,7 @@ func TestSliceQueue_ReusableAfterEmpty(t *testing.T) {
 	test.GotWant(t, p, 2)
 }
 
+// TestSliceQueue_LargeScale verifies correctness with large number of operations.
 func TestSliceQueue_LargeScale(t *testing.T) {
 	q := NewSliceQueueWithConfig[int](
 		SliceQueueConfig{
@@ -148,6 +158,8 @@ func TestSliceQueue_LargeScale(t *testing.T) {
 	test.GotWant(t, q.IsEmpty(), true)
 }
 
+// TestSliceQueue_Compaction verifies compaction optimization triggers correctly.
+// When waste exceeds threshold, compaction should reset curr to 0 and reuse capacity.
 func TestSliceQueue_Compaction(t *testing.T) {
 	q := NewSliceQueueWithConfig[int](SliceQueueConfig{
 		CompactOnEnqueue:      true,
@@ -172,6 +184,8 @@ func TestSliceQueue_Compaction(t *testing.T) {
 	test.GotWant(t, q.Size(), 41) // 40 remaining + 1 new
 }
 
+// TestSliceQueue_Reallocation verifies reallocation optimization triggers correctly.
+// When waste exceeds threshold, reallocation should shrink capacity.
 func TestSliceQueue_Reallocation(t *testing.T) {
 	q := NewSliceQueueWithConfig[int](SliceQueueConfig{
 		CompactOnEnqueue:       false,
