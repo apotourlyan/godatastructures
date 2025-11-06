@@ -1,0 +1,406 @@
+goos: linux
+goarch: amd64
+pkg: github.com/apotourlyan/godatastructures/internal/queues/structures
+cpu: AMD Ryzen 9 7900X3D 12-Core Processor          
+BenchmarkSliceQueue_Balanced/NoOptimizations-24         	  100000	     14476 ns/op	   23487 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/NoOptimizations-24         	  100000	      3261 ns/op	   23487 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/NoOptimizations-24         	  100000	      3216 ns/op	   23487 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/NoOptimizations-24         	  100000	      2961 ns/op	   23487 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/NoOptimizations-24         	  100000	      2882 ns/op	   23487 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/NoOptimizations-24         	  100000	      2783 ns/op	   23487 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/NoOptimizations-24         	  100000	      3314 ns/op	   23487 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/NoOptimizations-24         	  100000	      2999 ns/op	   23487 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/NoOptimizations-24         	  100000	      2950 ns/op	   23487 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/NoOptimizations-24         	  100000	      3011 ns/op	   23487 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/CompactOnly-24             	  100000	      1348 ns/op	       3 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/CompactOnly-24             	  100000	      1363 ns/op	       3 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/CompactOnly-24             	  100000	      1436 ns/op	       3 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/CompactOnly-24             	  100000	      1424 ns/op	       3 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/CompactOnly-24             	  100000	      1461 ns/op	       3 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/CompactOnly-24             	  100000	      1372 ns/op	       3 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/CompactOnly-24             	  100000	      1405 ns/op	       3 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/CompactOnly-24             	  100000	      1376 ns/op	       3 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/CompactOnly-24             	  100000	      1500 ns/op	       3 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/CompactOnly-24             	  100000	      1441 ns/op	       3 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/ReallocateOnly-24          	  100000	      4676 ns/op	   21226 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/ReallocateOnly-24          	  100000	      4599 ns/op	   21226 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/ReallocateOnly-24          	  100000	      4519 ns/op	   21226 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/ReallocateOnly-24          	  100000	      5614 ns/op	   21226 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/ReallocateOnly-24          	  100000	      4915 ns/op	   21226 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/ReallocateOnly-24          	  100000	      4682 ns/op	   21226 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/ReallocateOnly-24          	  100000	      5130 ns/op	   21226 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/ReallocateOnly-24          	  100000	      4997 ns/op	   21226 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/ReallocateOnly-24          	  100000	      5053 ns/op	   21226 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/ReallocateOnly-24          	  100000	      4865 ns/op	   21226 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/BothOptimizations-24       	  100000	      1653 ns/op	       3 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/BothOptimizations-24       	  100000	      1545 ns/op	       3 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/BothOptimizations-24       	  100000	      1716 ns/op	       3 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/BothOptimizations-24       	  100000	      1559 ns/op	       3 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/BothOptimizations-24       	  100000	      1556 ns/op	       3 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/BothOptimizations-24       	  100000	      1663 ns/op	       3 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/BothOptimizations-24       	  100000	      1542 ns/op	       3 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/BothOptimizations-24       	  100000	      1604 ns/op	       3 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/BothOptimizations-24       	  100000	      1565 ns/op	       3 B/op	       0 allocs/op
+BenchmarkSliceQueue_Balanced/BothOptimizations-24       	  100000	      1523 ns/op	       3 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/BothOptimizations-24     	  100000	      1610 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/BothOptimizations-24     	  100000	      1597 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/BothOptimizations-24     	  100000	      1611 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/BothOptimizations-24     	  100000	      1597 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/BothOptimizations-24     	  100000	      1596 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/BothOptimizations-24     	  100000	      1596 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/BothOptimizations-24     	  100000	      1625 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/BothOptimizations-24     	  100000	      1713 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/BothOptimizations-24     	  100000	      1628 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/BothOptimizations-24     	  100000	      1605 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/NoOptimizations-24       	  100000	      3007 ns/op	   23487 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/NoOptimizations-24       	  100000	      2898 ns/op	   23487 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/NoOptimizations-24       	  100000	      4896 ns/op	   23487 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/NoOptimizations-24       	  100000	      2945 ns/op	   23487 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/NoOptimizations-24       	  100000	      3250 ns/op	   23487 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/NoOptimizations-24       	  100000	      3265 ns/op	   23487 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/NoOptimizations-24       	  100000	      3293 ns/op	   23487 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/NoOptimizations-24       	  100000	      3313 ns/op	   23487 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/NoOptimizations-24       	  100000	      3532 ns/op	   23487 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/NoOptimizations-24       	  100000	      3038 ns/op	   23487 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/CompactOnly-24           	  100000	      1602 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/CompactOnly-24           	  100000	      1518 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/CompactOnly-24           	  100000	      1453 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/CompactOnly-24           	  100000	      1426 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/CompactOnly-24           	  100000	      1424 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/CompactOnly-24           	  100000	      1538 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/CompactOnly-24           	  100000	      1543 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/CompactOnly-24           	  100000	      1557 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/CompactOnly-24           	  100000	      1461 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/CompactOnly-24           	  100000	      1494 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/ReallocateOnly-24        	  100000	      4709 ns/op	   18617 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/ReallocateOnly-24        	  100000	      4630 ns/op	   18616 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/ReallocateOnly-24        	  100000	      4321 ns/op	   18617 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/ReallocateOnly-24        	  100000	      4462 ns/op	   18617 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/ReallocateOnly-24        	  100000	      4459 ns/op	   18616 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/ReallocateOnly-24        	  100000	      4025 ns/op	   18617 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/ReallocateOnly-24        	  100000	      3482 ns/op	   18617 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/ReallocateOnly-24        	  100000	      3800 ns/op	   18617 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/ReallocateOnly-24        	  100000	      3794 ns/op	   18616 B/op	       0 allocs/op
+BenchmarkSliceQueue_Oscilating/ReallocateOnly-24        	  100000	      4116 ns/op	   18616 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/NoOptimizations-24    	  100000	      6441 ns/op	   29366 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/NoOptimizations-24    	  100000	      3647 ns/op	   29366 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/NoOptimizations-24    	  100000	      4249 ns/op	   29366 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/NoOptimizations-24    	  100000	      3616 ns/op	   29366 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/NoOptimizations-24    	  100000	      3574 ns/op	   29366 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/NoOptimizations-24    	  100000	      3707 ns/op	   29366 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/NoOptimizations-24    	  100000	      3717 ns/op	   29366 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/NoOptimizations-24    	  100000	      5435 ns/op	   29366 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/NoOptimizations-24    	  100000	      3550 ns/op	   29366 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/NoOptimizations-24    	  100000	      3728 ns/op	   29366 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/CompactOnly-24        	  100000	      3712 ns/op	   23491 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/CompactOnly-24        	  100000	      3594 ns/op	   23491 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/CompactOnly-24        	  100000	      3782 ns/op	   23491 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/CompactOnly-24        	  100000	      3796 ns/op	   23491 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/CompactOnly-24        	  100000	      3750 ns/op	   23491 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/CompactOnly-24        	  100000	      3785 ns/op	   23491 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/CompactOnly-24        	  100000	      3685 ns/op	   23491 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/CompactOnly-24        	  100000	      3853 ns/op	   23491 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/CompactOnly-24        	  100000	      3580 ns/op	   23491 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/CompactOnly-24        	  100000	      3708 ns/op	   23491 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/ReallocateOnly-24     	  100000	      4195 ns/op	   29366 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/ReallocateOnly-24     	  100000	      3869 ns/op	   29366 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/ReallocateOnly-24     	  100000	      3782 ns/op	   29366 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/ReallocateOnly-24     	  100000	      3634 ns/op	   29366 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/ReallocateOnly-24     	  100000	      3790 ns/op	   29366 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/ReallocateOnly-24     	  100000	      3828 ns/op	   29366 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/ReallocateOnly-24     	  100000	      3841 ns/op	   29366 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/ReallocateOnly-24     	  100000	      3963 ns/op	   29366 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/ReallocateOnly-24     	  100000	      3760 ns/op	   29366 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/ReallocateOnly-24     	  100000	      3758 ns/op	   29366 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/BothOptimizations-24  	  100000	      3641 ns/op	   23491 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/BothOptimizations-24  	  100000	      3548 ns/op	   23491 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/BothOptimizations-24  	  100000	      3557 ns/op	   23491 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/BothOptimizations-24  	  100000	      3603 ns/op	   23491 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/BothOptimizations-24  	  100000	      3924 ns/op	   23491 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/BothOptimizations-24  	  100000	      3753 ns/op	   23491 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/BothOptimizations-24  	  100000	      4110 ns/op	   23491 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/BothOptimizations-24  	  100000	      3939 ns/op	   23491 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/BothOptimizations-24  	  100000	      3987 ns/op	   23491 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyGrowing/BothOptimizations-24  	  100000	      3862 ns/op	   23491 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/BothOptimizations-24    	  100000	     11917 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/BothOptimizations-24    	  100000	      4863 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/BothOptimizations-24    	  100000	      4699 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/BothOptimizations-24    	  100000	      4486 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/BothOptimizations-24    	  100000	      4752 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/BothOptimizations-24    	  100000	      7263 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/BothOptimizations-24    	  100000	      4770 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/BothOptimizations-24    	  100000	      5279 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/BothOptimizations-24    	  100000	      4853 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/BothOptimizations-24    	  100000	      4808 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/NoOptimizations-24      	  100000	      4817 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/NoOptimizations-24      	  100000	      4789 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/NoOptimizations-24      	  100000	      5078 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/NoOptimizations-24      	  100000	      4907 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/NoOptimizations-24      	  100000	      5070 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/NoOptimizations-24      	  100000	      4943 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/NoOptimizations-24      	  100000	      5187 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/NoOptimizations-24      	  100000	      4462 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/NoOptimizations-24      	  100000	      5026 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/NoOptimizations-24      	  100000	      4970 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/CompactOnly-24          	  100000	      4557 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/CompactOnly-24          	  100000	      4847 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/CompactOnly-24          	  100000	      5407 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/CompactOnly-24          	  100000	      5260 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/CompactOnly-24          	  100000	      5290 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/CompactOnly-24          	  100000	      5063 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/CompactOnly-24          	  100000	      4544 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/CompactOnly-24          	  100000	      4995 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/CompactOnly-24          	  100000	      4958 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/CompactOnly-24          	  100000	      5455 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/ReallocateOnly-24       	  100000	      4843 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/ReallocateOnly-24       	  100000	      5006 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/ReallocateOnly-24       	  100000	      4929 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/ReallocateOnly-24       	  100000	      4885 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/ReallocateOnly-24       	  100000	      5028 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/ReallocateOnly-24       	  100000	      5045 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/ReallocateOnly-24       	  100000	      5004 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/ReallocateOnly-24       	  100000	      5171 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/ReallocateOnly-24       	  100000	      5046 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_OnlyGrowing/ReallocateOnly-24       	  100000	      4971 ns/op	   45890 B/op	       0 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/NoOptimizations-24  	  100000	      6556 ns/op	   19766 B/op	     322 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/NoOptimizations-24  	  100000	      6478 ns/op	   19766 B/op	     322 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/NoOptimizations-24  	  100000	      6628 ns/op	   19766 B/op	     322 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/NoOptimizations-24  	  100000	      6737 ns/op	   19766 B/op	     322 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/NoOptimizations-24  	  100000	      6836 ns/op	   19766 B/op	     322 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/NoOptimizations-24  	  100000	      6796 ns/op	   19766 B/op	     322 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/NoOptimizations-24  	  100000	      7206 ns/op	   19766 B/op	     322 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/NoOptimizations-24  	  100000	      6820 ns/op	   19766 B/op	     322 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/NoOptimizations-24  	  100000	      6711 ns/op	   19766 B/op	     322 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/NoOptimizations-24  	  100000	      6875 ns/op	   19766 B/op	     322 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/CompactOnly-24      	  100000	      5510 ns/op	    5389 B/op	     322 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/CompactOnly-24      	  100000	      5186 ns/op	    5389 B/op	     322 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/CompactOnly-24      	  100000	      5952 ns/op	    5389 B/op	     322 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/CompactOnly-24      	  100000	      5687 ns/op	    5389 B/op	     322 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/CompactOnly-24      	  100000	      5838 ns/op	    5389 B/op	     322 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/CompactOnly-24      	  100000	      5629 ns/op	    5389 B/op	     322 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/CompactOnly-24      	  100000	      5702 ns/op	    5389 B/op	     322 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/CompactOnly-24      	  100000	      5537 ns/op	    5389 B/op	     322 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/CompactOnly-24      	  100000	      5206 ns/op	    5389 B/op	     322 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/CompactOnly-24      	  100000	      5215 ns/op	    5389 B/op	     322 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/ReallocateOnly-24   	  100000	     10206 ns/op	   13555 B/op	     338 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/ReallocateOnly-24   	  100000	      8066 ns/op	   13555 B/op	     338 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/ReallocateOnly-24   	  100000	      8409 ns/op	   13555 B/op	     338 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/ReallocateOnly-24   	  100000	      8685 ns/op	   13555 B/op	     338 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/ReallocateOnly-24   	  100000	      9608 ns/op	   13555 B/op	     338 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/ReallocateOnly-24   	  100000	      8982 ns/op	   13555 B/op	     338 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/ReallocateOnly-24   	  100000	      8777 ns/op	   13555 B/op	     338 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/ReallocateOnly-24   	  100000	      8537 ns/op	   13555 B/op	     338 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/ReallocateOnly-24   	  100000	      7999 ns/op	   13555 B/op	     338 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/ReallocateOnly-24   	  100000	      8301 ns/op	   13555 B/op	     338 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/BothOptimizations-24         	  100000	      7659 ns/op	   13555 B/op	     338 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/BothOptimizations-24         	  100000	      8539 ns/op	   13555 B/op	     338 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/BothOptimizations-24         	  100000	      8640 ns/op	   13555 B/op	     338 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/BothOptimizations-24         	  100000	      8363 ns/op	   13555 B/op	     338 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/BothOptimizations-24         	  100000	      8250 ns/op	   13555 B/op	     338 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/BothOptimizations-24         	  100000	      8909 ns/op	   13555 B/op	     338 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/BothOptimizations-24         	  100000	      8808 ns/op	   13555 B/op	     338 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/BothOptimizations-24         	  100000	      8488 ns/op	   13555 B/op	     338 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/BothOptimizations-24         	  100000	      8409 ns/op	   13555 B/op	     338 allocs/op
+BenchmarkSliceQueue_MostlyShrinking/BothOptimizations-24         	  100000	      7542 ns/op	   13555 B/op	     338 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/NoOptimizations-24             	  100000	     14369 ns/op	   15840 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/NoOptimizations-24             	  100000	     14521 ns/op	   15840 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/NoOptimizations-24             	  100000	     14668 ns/op	   15840 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/NoOptimizations-24             	  100000	     13524 ns/op	   15840 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/NoOptimizations-24             	  100000	     13876 ns/op	   15840 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/NoOptimizations-24             	  100000	     13055 ns/op	   15840 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/NoOptimizations-24             	  100000	     15889 ns/op	   15840 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/NoOptimizations-24             	  100000	     15540 ns/op	   15840 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/NoOptimizations-24             	  100000	     13523 ns/op	   15840 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/NoOptimizations-24             	  100000	     14035 ns/op	   15840 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/CompactOnly-24                 	  100000	     14552 ns/op	   15840 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/CompactOnly-24                 	  100000	     14727 ns/op	   15840 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/CompactOnly-24                 	  100000	     15228 ns/op	   15840 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/CompactOnly-24                 	  100000	     15527 ns/op	   15840 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/CompactOnly-24                 	  100000	     15480 ns/op	   15840 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/CompactOnly-24                 	  100000	     13946 ns/op	   15840 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/CompactOnly-24                 	  100000	     12988 ns/op	   15840 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/CompactOnly-24                 	  100000	     14052 ns/op	   15840 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/CompactOnly-24                 	  100000	     13680 ns/op	   15840 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/CompactOnly-24                 	  100000	     12862 ns/op	   15840 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/ReallocateOnly-24              	  100000	     15186 ns/op	   15924 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/ReallocateOnly-24              	  100000	     14977 ns/op	   15924 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/ReallocateOnly-24              	  100000	     15581 ns/op	   15924 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/ReallocateOnly-24              	  100000	     14778 ns/op	   15924 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/ReallocateOnly-24              	  100000	     15751 ns/op	   15924 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/ReallocateOnly-24              	  100000	     14811 ns/op	   15924 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/ReallocateOnly-24              	  100000	     16648 ns/op	   15924 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/ReallocateOnly-24              	  100000	     16095 ns/op	   15924 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/ReallocateOnly-24              	  100000	     15933 ns/op	   15924 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/ReallocateOnly-24              	  100000	     15524 ns/op	   15924 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/BothOptimizations-24           	  100000	     15633 ns/op	   15924 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/BothOptimizations-24           	  100000	     16504 ns/op	   15924 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/BothOptimizations-24           	  100000	     18033 ns/op	   15924 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/BothOptimizations-24           	  100000	     15135 ns/op	   15924 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/BothOptimizations-24           	  100000	     17337 ns/op	   15924 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/BothOptimizations-24           	  100000	     17517 ns/op	   15924 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/BothOptimizations-24           	  100000	     17049 ns/op	   15924 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/BothOptimizations-24           	  100000	     18446 ns/op	   15924 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/BothOptimizations-24           	  100000	     15510 ns/op	   15924 B/op	     990 allocs/op
+BenchmarkSliceQueue_OnlyShrinking/BothOptimizations-24           	  100000	     16308 ns/op	   15924 B/op	     990 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/OnlyEnqueue-24       	  100000	       132.3 ns/op	     16128 total-KB	     402 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/OnlyEnqueue-24       	  100000	        51.62 ns/op	     31528 total-KB	     322 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/OnlyEnqueue-24       	  100000	        82.23 ns/op	     49272 total-KB	     504 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/OnlyEnqueue-24       	  100000	       106.0 ns/op	     76992 total-KB	     788 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/OnlyEnqueue-24       	  100000	       190.7 ns/op	     96248 total-KB	     985 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/OnlyEnqueue-24       	  100000	         7.472 ns/op	     96248 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/OnlyEnqueue-24       	  100000	         6.944 ns/op	    120312 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/OnlyEnqueue-24       	  100000	       268.7 ns/op	    150392 total-KB	    1540 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/OnlyEnqueue-24       	  100000	         7.266 ns/op	    150392 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/OnlyEnqueue-24       	  100000	       249.2 ns/op	    187992 total-KB	    1925 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/OnlyDequeue-24       	  100000	        13.75 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/OnlyDequeue-24       	  100000	        13.65 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/OnlyDequeue-24       	  100000	        13.47 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/OnlyDequeue-24       	  100000	        13.21 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/OnlyDequeue-24       	  100000	        14.33 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/OnlyDequeue-24       	  100000	        13.89 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/OnlyDequeue-24       	  100000	        14.72 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/OnlyDequeue-24       	  100000	        17.47 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/OnlyDequeue-24       	  100000	        16.98 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/OnlyDequeue-24       	  100000	        13.85 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/MostlyEnqueue-24     	  100000	        13.07 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/MostlyEnqueue-24     	  100000	        13.05 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/MostlyEnqueue-24     	  100000	        12.90 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/MostlyEnqueue-24     	  100000	        15.29 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/MostlyEnqueue-24     	  100000	        13.11 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/MostlyEnqueue-24     	  100000	        25.02 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/MostlyEnqueue-24     	  100000	        13.26 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/MostlyEnqueue-24     	  100000	        12.84 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/MostlyEnqueue-24     	  100000	        17.69 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/MostlyEnqueue-24     	  100000	        13.12 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/MostlyDequeue-24     	  100000	        14.81 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/MostlyDequeue-24     	  100000	        16.67 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/MostlyDequeue-24     	  100000	        14.73 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/MostlyDequeue-24     	  100000	        18.64 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/MostlyDequeue-24     	  100000	        18.45 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/MostlyDequeue-24     	  100000	        15.23 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/MostlyDequeue-24     	  100000	        18.68 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/MostlyDequeue-24     	  100000	        17.83 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/MostlyDequeue-24     	  100000	        29.55 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/CompactOnly/MostlyDequeue-24     	  100000	        19.57 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/OnlyEnqueue-24    	  100000	       148.1 ns/op	     16128 total-KB	     402 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/OnlyEnqueue-24    	  100000	        57.22 ns/op	     31528 total-KB	     322 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/OnlyEnqueue-24    	  100000	       127.0 ns/op	     49272 total-KB	     504 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/OnlyEnqueue-24    	  100000	       103.5 ns/op	     76992 total-KB	     788 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/OnlyEnqueue-24    	  100000	       192.6 ns/op	     96248 total-KB	     985 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/OnlyEnqueue-24    	  100000	         5.884 ns/op	     96248 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/OnlyEnqueue-24    	  100000	         6.686 ns/op	    120312 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/OnlyEnqueue-24    	  100000	       326.0 ns/op	    150392 total-KB	    1540 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/OnlyEnqueue-24    	  100000	         6.644 ns/op	    150392 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/OnlyEnqueue-24    	  100000	       252.6 ns/op	    187992 total-KB	    1925 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/OnlyDequeue-24    	  100000	        23.23 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/OnlyDequeue-24    	  100000	        20.65 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/OnlyDequeue-24    	  100000	        19.44 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/OnlyDequeue-24    	  100000	        16.86 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/OnlyDequeue-24    	  100000	        16.84 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/OnlyDequeue-24    	  100000	        43.19 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/OnlyDequeue-24    	  100000	       275.1 ns/op	     93996 total-KB	     962 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/OnlyDequeue-24    	  100000	        25.79 ns/op	     93996 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/OnlyDequeue-24    	  100000	        18.03 ns/op	     46998 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/OnlyDequeue-24    	  100000	        70.46 ns/op	         1.281 total-KB	     240 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/MostlyEnqueue-24  	  100000	       150.6 ns/op	     13872 total-KB	     346 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/MostlyEnqueue-24  	  100000	        71.89 ns/op	     27112 total-KB	     277 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/MostlyEnqueue-24  	  100000	       127.2 ns/op	     42376 total-KB	     433 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/MostlyEnqueue-24  	  100000	       154.0 ns/op	     52976 total-KB	     542 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/MostlyEnqueue-24  	  100000	       134.2 ns/op	     66224 total-KB	     678 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/MostlyEnqueue-24  	  100000	       119.3 ns/op	     82784 total-KB	     847 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/MostlyEnqueue-24  	  100000	        13.30 ns/op	     82784 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/MostlyEnqueue-24  	  100000	        12.37 ns/op	    103488 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/MostlyEnqueue-24  	  100000	       273.2 ns/op	    129368 total-KB	    1324 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/MostlyEnqueue-24  	  100000	        13.81 ns/op	    129368 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/MostlyDequeue-24  	  100000	        16.23 ns/op	    129368 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/MostlyDequeue-24  	  100000	        15.64 ns/op	    129368 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/MostlyDequeue-24  	  100000	        15.64 ns/op	    129368 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/MostlyDequeue-24  	  100000	        15.45 ns/op	    161712 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/MostlyDequeue-24  	  100000	       180.1 ns/op	     80856 total-KB	     827 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/MostlyDequeue-24  	  100000	        15.49 ns/op	     80856 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/MostlyDequeue-24  	  100000	        15.67 ns/op	     80856 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/MostlyDequeue-24  	  100000	        15.11 ns/op	     40428 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/MostlyDequeue-24  	  100000	        86.42 ns/op	     20214 total-KB	     207 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/ReallocateOnly/MostlyDequeue-24  	  100000	        30.97 ns/op	         0.1719 total-KB	     103 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/OnlyEnqueue-24 	  100000	       108.7 ns/op	     16128 total-KB	     402 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/OnlyEnqueue-24 	  100000	        51.20 ns/op	     31528 total-KB	     322 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/OnlyEnqueue-24 	  100000	        98.21 ns/op	     49272 total-KB	     504 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/OnlyEnqueue-24 	  100000	        79.53 ns/op	     76992 total-KB	     788 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/OnlyEnqueue-24 	  100000	       215.7 ns/op	     96248 total-KB	     985 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/OnlyEnqueue-24 	  100000	         7.188 ns/op	     96248 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/OnlyEnqueue-24 	  100000	         6.787 ns/op	    120312 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/OnlyEnqueue-24 	  100000	       362.2 ns/op	    150392 total-KB	    1540 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/OnlyEnqueue-24 	  100000	         7.043 ns/op	    150392 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/OnlyEnqueue-24 	  100000	       332.5 ns/op	    187992 total-KB	    1925 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/OnlyDequeue-24 	  100000	        20.64 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/OnlyDequeue-24 	  100000	        18.05 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/OnlyDequeue-24 	  100000	        17.94 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/OnlyDequeue-24 	  100000	        18.21 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/OnlyDequeue-24 	  100000	        17.58 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/OnlyDequeue-24 	  100000	        17.63 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/OnlyDequeue-24 	  100000	       294.9 ns/op	     93996 total-KB	     962 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/OnlyDequeue-24 	  100000	        17.54 ns/op	     93996 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/OnlyDequeue-24 	  100000	        17.80 ns/op	     46998 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/OnlyDequeue-24 	  100000	        39.64 ns/op	         1.281 total-KB	     240 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/MostlyEnqueue-24         	  100000	       126.1 ns/op	     13872 total-KB	     346 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/MostlyEnqueue-24         	  100000	        50.90 ns/op	     27112 total-KB	     277 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/MostlyEnqueue-24         	  100000	       118.7 ns/op	     42376 total-KB	     433 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/MostlyEnqueue-24         	  100000	       120.5 ns/op	     52976 total-KB	     542 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/MostlyEnqueue-24         	  100000	       170.3 ns/op	     66224 total-KB	     678 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/MostlyEnqueue-24         	  100000	       227.1 ns/op	     82784 total-KB	     847 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/MostlyEnqueue-24         	  100000	        13.40 ns/op	     82784 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/MostlyEnqueue-24         	  100000	        13.13 ns/op	    103488 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/MostlyEnqueue-24         	  100000	       290.5 ns/op	    129368 total-KB	    1324 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/MostlyEnqueue-24         	  100000	        20.09 ns/op	    129368 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/MostlyDequeue-24         	  100000	        16.63 ns/op	    129368 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/MostlyDequeue-24         	  100000	        16.27 ns/op	    129368 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/MostlyDequeue-24         	  100000	        16.41 ns/op	    129368 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/MostlyDequeue-24         	  100000	        16.01 ns/op	    129368 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/MostlyDequeue-24         	  100000	        16.04 ns/op	    129368 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/MostlyDequeue-24         	  100000	       224.3 ns/op	     64684 total-KB	     662 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/MostlyDequeue-24         	  100000	        23.70 ns/op	     64684 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/MostlyDequeue-24         	  100000	       115.9 ns/op	     32342 total-KB	     331 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/MostlyDequeue-24         	  100000	        50.13 ns/op	     16171 total-KB	     165 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/BothOptimizations/MostlyDequeue-24         	  100000	        25.61 ns/op	         0.09375 total-KB	      83 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/OnlyEnqueue-24             	  100000	       117.8 ns/op	     16128 total-KB	     402 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/OnlyEnqueue-24             	  100000	        41.55 ns/op	     31528 total-KB	     322 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/OnlyEnqueue-24             	  100000	       107.6 ns/op	     49272 total-KB	     504 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/OnlyEnqueue-24             	  100000	       105.7 ns/op	     76992 total-KB	     788 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/OnlyEnqueue-24             	  100000	        82.53 ns/op	     96248 total-KB	     985 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/OnlyEnqueue-24             	  100000	        10.57 ns/op	     96248 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/OnlyEnqueue-24             	  100000	         6.478 ns/op	    120312 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/OnlyEnqueue-24             	  100000	       228.4 ns/op	    150392 total-KB	    1540 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/OnlyEnqueue-24             	  100000	         6.726 ns/op	    150392 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/OnlyEnqueue-24             	  100000	       481.9 ns/op	    187992 total-KB	    1925 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/OnlyDequeue-24             	  100000	        21.40 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/OnlyDequeue-24             	  100000	        14.14 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/OnlyDequeue-24             	  100000	        13.77 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/OnlyDequeue-24             	  100000	        18.12 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/OnlyDequeue-24             	  100000	        17.29 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/OnlyDequeue-24             	  100000	        14.92 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/OnlyDequeue-24             	  100000	        14.01 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/OnlyDequeue-24             	  100000	        14.29 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/OnlyDequeue-24             	  100000	        14.15 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/OnlyDequeue-24             	  100000	        14.07 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/MostlyEnqueue-24           	  100000	        11.93 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/MostlyEnqueue-24           	  100000	        11.46 ns/op	    187992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/MostlyEnqueue-24           	  100000	       405.0 ns/op	    234992 total-KB	    2406 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/MostlyEnqueue-24           	  100000	        12.21 ns/op	    234992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/MostlyEnqueue-24           	  100000	        11.54 ns/op	    234992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/MostlyEnqueue-24           	  100000	        11.51 ns/op	    234992 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/MostlyEnqueue-24           	  100000	       348.2 ns/op	    293744 total-KB	    3007 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/MostlyEnqueue-24           	  100000	        12.33 ns/op	    293744 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/MostlyEnqueue-24           	  100000	        11.37 ns/op	    293744 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/MostlyEnqueue-24           	  100000	        11.52 ns/op	    293744 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/MostlyDequeue-24           	  100000	        14.25 ns/op	    293744 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/MostlyDequeue-24           	  100000	        13.95 ns/op	    293744 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/MostlyDequeue-24           	  100000	        19.47 ns/op	    293744 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/MostlyDequeue-24           	  100000	        16.66 ns/op	    293744 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/MostlyDequeue-24           	  100000	        14.55 ns/op	    293744 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/MostlyDequeue-24           	  100000	        14.07 ns/op	    367184 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/MostlyDequeue-24           	  100000	        15.56 ns/op	    367184 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/MostlyDequeue-24           	  100000	        13.98 ns/op	    367184 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/MostlyDequeue-24           	  100000	        13.86 ns/op	    367184 total-KB	       0 B/op	       0 allocs/op
+BenchmarkSliceQueue_TotalMemory/NoOptimizations/MostlyDequeue-24           	  100000	        20.41 ns/op	    367184 total-KB	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/apotourlyan/godatastructures/internal/queues/structures	152.556s
