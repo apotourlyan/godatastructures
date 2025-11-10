@@ -1,13 +1,97 @@
 package structures
 
+/*
+Testing Strategy
+================
+
+The SliceQueue test suite verifies both fundamental queue behavior and
+optimization mechanisms. These tests emphasize:
+
+1. FIFO Semantics
+   - Elements dequeued in exact order they were enqueued
+   - No random access (unlike lists)
+   - Peek returns front without modification
+
+2. Optimization Correctness
+   - Compaction triggers at correct thresholds
+   - Reallocation reclaims memory appropriately
+   - Optimizations preserve FIFO ordering
+
+3. Configuration Flexibility
+   - NoOptimizations baseline works correctly
+   - Each optimization can be enabled independently
+   - Configurations don't break core behavior
+
+Core Test Principles
+====================
+
+Every test uses NoOptimizations config by default to verify baseline behavior.
+Optimization-specific tests explicitly enable and verify optimization triggers.
+
+Configuration Pattern:
+  NoOptimizations = baseline correctness tests
+  Specific configs = optimization behavior tests
+
+This separation ensures:
+- Core queue logic is correct before testing optimizations
+- Optimization bugs don't mask fundamental issues
+- Each optimization can be verified in isolation
+
+Test Organization
+=================
+
+Tests are organized by concern:
+
+Basic Behavior Tests (NoOptimizations):
+  - Empty queue operations
+  - Constructor with initial values
+  - Generic type support
+  - FIFO ordering
+  - Peek non-destructive behavior
+  - Reusability after empty
+  - Large-scale correctness
+
+Optimization Tests (Specific Configs):
+  - Compaction triggering and correctness
+  - Reallocation triggering and memory reclamation
+
+This organization makes it clear which tests verify core behavior
+vs optimization-specific functionality.
+
+Test Coverage
+=============
+
+Coverage by category:
+
+Basic Queue Operations:
+  ✓ Empty queue (Peek and Dequeue return errors)
+  ✓ Constructor with values
+  ✓ Generic type support (string example)
+  ✓ FIFO ordering maintained
+  ✓ Peek is non-destructive
+  ✓ Reusable after becoming empty
+  ✓ Large-scale operations (10,000 elements)
+
+Optimization Verification:
+  ✓ Compaction triggers at threshold
+  ✓ Compaction resets curr pointer
+  ✓ Compaction preserves elements
+  ✓ Reallocation triggers at threshold
+  ✓ Reallocation shrinks capacity
+  ✓ Reallocation preserves elements
+*/
+
 import (
 	"testing"
 
 	"github.com/apotourlyan/godatastructures/internal/utilities/test"
 )
 
-// TestSliceQueue_Empty verifies behavior on an empty queue.
-// Ensures Peek and Dequeue return appropriate errors.
+// Purpose: Verify empty queue behavior
+//
+// Verifies: ErrorEmptyQueue returned, size == 0, isEmpty == true
+//
+// Config: NoOptimizations
 func TestSliceQueue_Empty(t *testing.T) {
 	q := NewSliceQueueWithConfig[int](
 		SliceQueueConfig{
@@ -26,7 +110,11 @@ func TestSliceQueue_Empty(t *testing.T) {
 	test.GotWantError(t, dErr, ErrorEmptyQueue)
 }
 
-// TestSliceQueue_InitialValues verifies constructor with initial values.
+// Purpose: Verify constructor with values
+//
+// Verifies: Values stored correctly, size correct, FIFO order
+//
+// Config: NoOptimizations
 func TestSliceQueue_InitialValues(t *testing.T) {
 	q := NewSliceQueueWithConfig(
 		SliceQueueConfig{
@@ -45,7 +133,11 @@ func TestSliceQueue_InitialValues(t *testing.T) {
 	test.GotWantError(t, dErr, "")
 }
 
-// TestSliceQueue_AlternativeType verifies queue works with non-int types.
+// Purpose: Verify generic type support
+//
+// Verifies: Works with string type (not just int)
+//
+// Config: NoOptimizations
 func TestSliceQueue_AlternativeType(t *testing.T) {
 	q := NewSliceQueueWithConfig(
 		SliceQueueConfig{
@@ -58,8 +150,13 @@ func TestSliceQueue_AlternativeType(t *testing.T) {
 	test.GotWant(t, q.Size(), 1)
 }
 
-// TestSliceQueue_FirstInFirstOutOrder verifies FIFO ordering is maintained.
-// Elements should be dequeued in the same order they were enqueued.
+// Purpose: Verify FIFO ordering maintained
+//
+// Verifies: Enqueue 0,1,2 → Dequeue 0,1,2 in order
+//
+// Details: Tests both Peek and Dequeue order preservation
+//
+// Config: NoOptimizations
 func TestSliceQueue_FirstInFirstOutOrder(t *testing.T) {
 	q := NewSliceQueueWithConfig[int](
 		SliceQueueConfig{
@@ -99,8 +196,11 @@ func TestSliceQueue_FirstInFirstOutOrder(t *testing.T) {
 	test.GotWant(t, q.IsEmpty(), true)
 }
 
-// TestSliceQueue_PeekDoesNotModify verifies Peek is non-destructive.
-// Multiple peeks should return the same value without changing queue state.
+// Purpose: Verify Peek is non-destructive
+//
+// Verifies: Multiple peeks return same value, size unchanged
+//
+// Config: NoOptimizations
 func TestSliceQueue_PeekDoesNotModify(t *testing.T) {
 	q := NewSliceQueueWithConfig(
 		SliceQueueConfig{
@@ -117,7 +217,11 @@ func TestSliceQueue_PeekDoesNotModify(t *testing.T) {
 	}
 }
 
-// TestSliceQueue_ReusableAfterEmpty verifies queue can be reused after becoming empty.
+// Purpose: Verify queue can be reused after becoming empty
+//
+// Verifies: Enqueue → Dequeue → Enqueue works correctly
+//
+// Config: NoOptimizations
 func TestSliceQueue_ReusableAfterEmpty(t *testing.T) {
 	q := NewSliceQueueWithConfig[int](
 		SliceQueueConfig{
@@ -136,7 +240,11 @@ func TestSliceQueue_ReusableAfterEmpty(t *testing.T) {
 	test.GotWant(t, p, 2)
 }
 
-// TestSliceQueue_LargeScale verifies correctness with large number of operations.
+// Purpose: Verify correctness with large number of operations
+//
+// Verifies: 10,000 enqueues followed by 10,000 dequeues in order
+//
+// Config: NoOptimizations
 func TestSliceQueue_LargeScale(t *testing.T) {
 	q := NewSliceQueueWithConfig[int](
 		SliceQueueConfig{
@@ -158,8 +266,17 @@ func TestSliceQueue_LargeScale(t *testing.T) {
 	test.GotWant(t, q.IsEmpty(), true)
 }
 
-// TestSliceQueue_Compaction verifies compaction optimization triggers correctly.
-// When waste exceeds threshold, compaction should reset curr to 0 and reuse capacity.
+// Purpose: Verify compaction optimization triggers correctly
+//
+// Setup: Enqueue 100, Dequeue 60 (60% waste)
+//
+// Config: CompactOnEnqueue, 50% threshold
+//
+// Verifies:
+//   - curr > 0 before compaction
+//   - curr == 0 after compaction
+//   - Size correct after compaction
+//   - Elements preserved
 func TestSliceQueue_Compaction(t *testing.T) {
 	q := NewSliceQueueWithConfig[int](SliceQueueConfig{
 		CompactOnEnqueue:      true,
@@ -184,8 +301,16 @@ func TestSliceQueue_Compaction(t *testing.T) {
 	test.GotWant(t, q.Size(), 41) // 40 remaining + 1 new
 }
 
-// TestSliceQueue_Reallocation verifies reallocation optimization triggers correctly.
-// When waste exceeds threshold, reallocation should shrink capacity.
+// Purpose: Verify reallocation optimization triggers correctly
+//
+// Setup: Enqueue 1000, Dequeue 850 (85% waste)
+//
+// Config: ReallocateOnDequeue, 75% threshold
+//
+// Verifies:
+//   - Capacity shrinks (capAfter < capBefore)
+//   - Size correct after reallocation
+//   - Elements preserved
 func TestSliceQueue_Reallocation(t *testing.T) {
 	q := NewSliceQueueWithConfig[int](SliceQueueConfig{
 		CompactOnEnqueue:       false,
