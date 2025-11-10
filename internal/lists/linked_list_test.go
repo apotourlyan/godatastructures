@@ -1,4 +1,127 @@
-package linkedlists
+package lists
+
+/*
+Testing Strategy
+================
+
+The LinkedList test suite uses a comprehensive approach to verify correctness:
+
+1. Edge Cases
+   - Empty lists
+   - Single-element lists
+   - Boundary conditions (first/last elements)
+
+2. Core Operations
+   - All mutation operations (Add, Remove, InsertAt, RemoveAt)
+   - All query operations (GetAt, IndexOf, Contains, First, Last)
+   - All state operations (IsEmpty, Size)
+
+3. Invariant Verification
+   Each test verifies critical invariants after operations:
+   - Size matches expected value
+   - Head points to first element
+   - Tail points to last element
+   - Tail.Next is always nil (no cycles)
+
+4. Order Preservation
+   Special "Order" tests verify that:
+   - Elements maintain insertion order
+   - List structure is not corrupted
+   - All nodes are properly linked
+
+5. Error Conditions
+   Tests verify proper error handling for:
+   - Invalid indices (negative, out of range)
+   - Operations on empty lists
+
+Test Organization
+=================
+
+Tests are organized by operation and scenario:
+- TestLinkedList_<Operation>_<Scenario>
+
+Examples:
+- TestLinkedList_Add_OneValue_EmptyList
+- TestLinkedList_Remove_LastValue_TwoElementList
+- TestLinkedList_InsertAt_Middle_ManyElementList
+
+This naming convention makes it immediately clear:
+1. What operation is being tested
+2. What the test scenario is
+3. What state the list starts in
+
+Benefits:
+- Easy to identify missing test cases
+- Clear failure messages
+- Self-documenting test suite
+
+Test Coverage
+=============
+
+Coverage by operation:
+
+Constructor (NewLinkedList):
+  ✓ Empty list
+  ✓ Single value
+  ✓ Multiple values
+  ✓ Order preservation
+
+Add:
+  ✓ Add to empty list (1 and 2 values)
+  ✓ Add to non-empty list (1 and 2 values)
+  ✓ Order preservation
+
+Remove:
+  ✓ Remove from empty list
+  ✓ Remove single element (list becomes empty)
+  ✓ Remove first of two elements
+  ✓ Remove last of two elements
+  ✓ Remove middle element
+  ✓ Remove non-existent element
+  ✓ Order preservation after removal
+
+InsertAt:
+  ✓ Negative index (error)
+  ✓ Invalid index (error)
+  ✓ Insert into empty list (index 0)
+  ✓ Insert at start (single and many elements)
+  ✓ Insert at end/append (single and many elements)
+  ✓ Insert in middle
+  ✓ Order preservation after insertion
+
+RemoveAt:
+  ✓ Negative index (error)
+  ✓ Invalid index (error)
+  ✓ Remove single element (list becomes empty)
+  ✓ Remove at start
+  ✓ Remove at end
+  ✓ Remove in middle
+  ✓ Order preservation after removal
+
+GetAt:
+  ✓ Negative index (error)
+  ✓ Invalid index (error)
+  ✓ Get at start
+  ✓ Get at end
+  ✓ Get in middle
+  ✓ Get all elements in order
+
+IndexOf:
+  ✓ Search in empty list
+  ✓ Search for non-existent element
+  ✓ Search for existing element
+  ✓ Find all elements in order
+
+Contains:
+  ✓ Search in empty list
+  ✓ Search for non-existent element
+  ✓ Search for existing element
+  ✓ Verify all elements present
+
+First/Last/IsEmpty/Size:
+  ✓ On empty list
+  ✓ On non-empty list
+*/
 
 import (
 	"testing"
