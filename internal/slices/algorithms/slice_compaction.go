@@ -33,7 +33,8 @@ func (p *SliceCompactionParams) validate(length int) {
 //
 // Compaction occurs when ALL conditions are met:
 //   - Used size >= MinSize (avoid expensive compaction on small ranges)
-//   - Waste percent < WastePercent (enough waste to justify cost)
+//   - Waste percent >= WastePercent (enough waste to justify cost)
+//   - UsedStart > 0 (not already at beginning)
 //
 // If compaction occurs, elements at [UsedStart:length] are moved to [0:used],
 // the resliced data[:used] and the new start index are returned.
@@ -67,14 +68,14 @@ func (p *SliceCompactionParams) validate(length int) {
 //	  WastePercent: 50,  // Compact if waste >= 50% length
 //	}
 //
-//	// Waste: 5/8 = 62.5% >= 50% => compaction triggered
+//	// Waste: 5/8 = 63% >= 50% => compaction triggered
 //	data, start := Compact(data, params)
 //	// Result: data = [1, 2, 3]  // Re-sliced to used size
 //	//         start = 0
 //
 // Use cases:
 //   - Slice-based queues (elements removed from front)
-//   - Slice-based deques (elements removed from either end)
+//   - Slice-based deques (elements removed from front & back)
 //   - Any structure with sliding window over slice
 func Compact[T any](data []T, p SliceCompactionParams) (cData []T, start int) {
 	length := len(data)
